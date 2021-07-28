@@ -2,9 +2,9 @@ name: Team awesome's approval workflow
 on: pull_request_review
 jobs:
   labelWhenApproved:
+    name: Labelly when approved
     runs-on: ubuntu-latest
     steps:
-    - name: Labelly when approved
     - uses: pullreminders/label-when-approved-action@master
       env:
         APPROVALS: "1"
