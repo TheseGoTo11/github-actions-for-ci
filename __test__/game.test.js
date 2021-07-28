@@ -7,7 +7,7 @@ describe('App', () => {
     expect(data).toMatchSnapshot()
   })
 })
-
+//comment
 describe('Game', () => {
   let game, p1, p2
   beforeEach(() => {
