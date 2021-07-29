@@ -4,9 +4,9 @@ jobs:
   labelWhenApproved:
     runs-on: ubuntu-latest
     steps:
-    - name: Label me when approved
-      uses: abinoda/label-when-approved-action@master
+    - name: Label when approved
+      uses: pullreminders/label-when-approved-action@master
       env:
         APPROVALS: "1"
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        ADD_LABEL: "rock on"
+        GITHUB_TOKEN: {% raw %}${{ secrets.GITHUB_TOKEN }}{% endraw %}
+        ADD_LABEL: "approved"
