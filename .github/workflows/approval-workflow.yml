@@ -4,7 +4,7 @@ jobs:
   labelWhenApproved:
     runs-on: ubuntu-latest
     steps:
-    - name: Labelly when approved
+    - name: Label me when approved
       uses: abinoda/label-when-approved-action@master
       env:
         APPROVALS: "1"
